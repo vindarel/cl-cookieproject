@@ -17,8 +17,8 @@ or build and run the binary:
 
 ```
 $ make build
-$ ./{{ cookiecutter.project_name }}
-Hello from {{ cookiecutter.project_name }}
+$ ./{{ cookiecutter.project_name }} [name]
+Hello [name] from {{ cookiecutter.project_name }}
 ```
 
 ## Roswell integration
