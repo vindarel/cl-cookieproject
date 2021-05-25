@@ -6,6 +6,9 @@
   :version "{{ cookiecutter.version }}"
   :license "BSD"
   :serial t
+
+  ;; dependencies
+  :depends-on ()
   :components ((:module "src"
                         :serial t
                         :components ((:file "packages")
