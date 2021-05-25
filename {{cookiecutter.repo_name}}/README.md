@@ -1,7 +1,27 @@
-{{ cookiecutter.project_name }}
-{{ '=' * cookiecutter.project_name | length }}
+# {{ cookiecutter.project_name }}
+
 {{ cookiecutter.description }}
 
-[![Build Status]
-    (https://travis-ci.org/{{ cookiecutter.username }}/{{ cookiecutter.repo_name }}.svg)]
-    (https://travis-ci.org/{{ cookiecutter.username }}/{{ cookiecutter.repo_name }})
+# Usage
+
+Run from sources:
+
+    make run
+    # aka sbcl --load run.lisp
+
+choose your lisp:
+
+    LISP=ccl make run
+
+or build and run the binary:
+
+```
+$ make build
+$ ./{{ cookiecutter.project_name }}
+Hello from {{ cookiecutter.project_name }}
+```
+
+
+---
+
+Licence: BSD

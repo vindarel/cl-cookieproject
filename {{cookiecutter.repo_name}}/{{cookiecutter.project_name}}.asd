@@ -9,6 +9,11 @@
 
   ;; dependencies
   :depends-on ()
+
+  ;; build a binary:
+  :build-operation "program-op"
+  :entry-point "{{ cookiecutter.project_name}}:main"
+
   :components ((:module "src"
                         :serial t
                         :components ((:file "packages")

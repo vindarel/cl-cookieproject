@@ -1,11 +1,11 @@
 {
-    "project_name": "my-condescending-project",
+    "project_name": "cookie-lisp-project",
     "repo_name": "{{ cookiecutter.project_name }}",
     "description": "",
     "version": "0.0.1",
-    "year": 2015,
+    "year": 1984,
     "author": "CL User",
-    "email": "{{ cookiecutter.author.split()|join('.')|lower }}@gmail.com",
+    "email": "{{ cookiecutter.author.split()|join('.')|lower }}@mail.com",
     "username": "{{ cookiecutter.author|first|lower }}{{ cookiecutter.author.split()|last|lower }}",
     "branch": "master",
     "remote": "origin"

@@ -1,2 +1,3 @@
 (defpackage :{{ cookiecutter.project_name }}
-  (:use :cl))
+  (:use :cl)
+  (:export :main))
