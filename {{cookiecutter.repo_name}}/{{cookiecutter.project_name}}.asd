@@ -1,3 +1,5 @@
+(in-package :asdf-user)
+
 (defsystem "{{ cookiecutter.project_name }}"
   :description "{{ cookiecutter.description }}"
   :author "{{ cookiecutter.author }} <{{ cookiecutter.email }}>"
