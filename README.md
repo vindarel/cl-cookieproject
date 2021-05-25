@@ -1,21 +1,14 @@
-cookiecutter-cl
-===============
-A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Lisp projects
+cl-cookieproject
+================
 
-Forked from [cookiecutter-cl](https://github.com/hbristow/cookiecutter-cl).
+A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Lisp projects featuring:
 
-
-
-Features
---------
-
-- Canonical Common Lisp project structure
-- ASDF system definitions
+- Canonical Common Lisp project structure, a ready-to-use project with an entry point and unit tests.
 - Run project from sources
 - Build a binary
-- Choose your Lisp implementation
-- Test suite using [lisp-unit](http://www.cs.northwestern.edu/academics/courses/325/readings/lisp-unit.html) and CI using [travis](https://travis-ci.org/)
-- Standardized use of string designators
+- and choose your Lisp implementation
+- Test suite using [Fiveam](https://common-lisp.net/project/fiveam/docs/)
+  - a [travis](https://travis-ci.org/) CI configuration file (untested)
 - BSD licenced by default
 
 
@@ -88,3 +81,13 @@ done]
 $ ./cookie-lisp-project
 Hello from cookie-lisp-project!
 ```
+
+# TODOs
+
+- [ ] more CI setup
+- [ ] build a .deb (and .rpm)
+- [ ] web project skeleton
+
+---
+
+Acknowledgement: we forked [cookiecutter-cl](https://github.com/hbristow/cookiecutter-cl).
