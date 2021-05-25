@@ -1,0 +1,3 @@
+(in-package :{{ cookiecutter.project_name }}-tests)
+
+;; Define your project tests here...

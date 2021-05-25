@@ -1,0 +1,3 @@
+(in-package :{{ cookiecutter.project_name }})
+
+;; Define your project functionality here...

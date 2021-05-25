@@ -1,0 +1,26 @@
+language: lisp
+
+sudo: required
+
+env:
+    matrix:
+        - LISP=abcl     # Armed Bear Common Lisp
+        - LISP=allegro  # Allegro Common Lisp
+        - LISP=ccl      # Clozure Common Lisp
+        - LISP=clisp    # CLISP
+        - LISP=sbcl     # Steel Bank Common Lisp
+
+matrix:
+    allow_failures:
+        - env: LISP=allegro
+        - env: LISP=clisp
+
+install:
+    # Install CL Travis Handler
+    - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
+
+script:
+    # Run the {{ cookiecutter.project_name }} tests using lisp-unit
+    cl -e '(ql:quickload :{{ cookiecutter.project_name }}-tests)
+           (unless ({{ cookiecutter.project_name }}-tests:run)
+             (uiop:quit 1))'
