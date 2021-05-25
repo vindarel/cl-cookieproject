@@ -9,6 +9,7 @@ A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Li
 - and choose your Lisp implementation
 - Test suite using [Fiveam](https://common-lisp.net/project/fiveam/docs/)
   - a [travis](https://travis-ci.org/) CI configuration file (untested)
+- [Roswell](https://github.com/roswell/roswell/) recipe (needs tests)
 - BSD licenced by default
 
 

@@ -2,5 +2,5 @@
 
 ;; Define your project functionality here...
 
-(defun main ()
-  (format t "Hello from ~a!~&" "{{ cookiecutter.project_name }}"))
+(defun main (&optional (name "{{ cookiecutter.author }}"))
+  (format t "Hello ~a from ~a!~&" name "{{ cookiecutter.project_name }}"))

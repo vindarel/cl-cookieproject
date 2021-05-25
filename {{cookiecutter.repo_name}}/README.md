@@ -21,6 +21,14 @@ $ ./{{ cookiecutter.project_name }}
 Hello from {{ cookiecutter.project_name }}
 ```
 
+## Roswell integration
+
+Roswell is an implementation manager and [script launcher](https://github.com/roswell/roswell/wiki/Roswell-as-a-Scripting-Environment).
+
+A POC script is in the roswell/ directory.
+
+Your users can install the script with `{{ cookiecutter.username }}/{{ cookiecutter.project_name }}`.
+
 # Dev
 
 Tests are defined with [Fiveam](https://common-lisp.net/project/fiveam/docs/).

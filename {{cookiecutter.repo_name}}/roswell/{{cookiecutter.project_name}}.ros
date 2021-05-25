@@ -1,0 +1,31 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+
+;; use +Q if you don't have Quicklisp dependencies to save startup time.
+
+(defun help ()
+  (format t "~&Usage:
+
+  from the project root:
+
+  Run as a script:
+  ./roswell/{{ cookiecutter.project_name }}.ros
+
+  Build a binary:
+
+  ros build roswell/{{ cookiecutter.project_name}}.ros
+  ./roswell/{{ cookiecutter.project_name}} [name]~&
+
+  Your users can install the script with ros install {{ cookiecutter.username }}/{{ cookiecutter.project_name }}"))
+
+;XXX: this load does not load from everywhere
+; doesn't work for to run as a script.
+(load (truename "{{ cookiecutter.project_name}}.asd"))
+(ql:quickload "{{ cookiecutter.project_name }}")
+
+(defun main (&rest argv)
+  "Optional name parameter."
+  ({{ cookiecutter.project_name}}::greet (first argv)))
