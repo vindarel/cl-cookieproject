@@ -4,23 +4,13 @@
 exec ros -Q -- $0 "$@"
 |#
 
-;; Use +Q if you don't have Quicklisp dependencies to save startup time.
-;; Use ros build --disable-compression to save on startup time and loose on application size.
+;; Use `+Q`  if you don't have Quicklisp dependencies to save startup time.
 
 (defun help ()
   (format t "~&Usage:
 
-  from the project root:
-
-  Run as a script:
-  ./roswell/{{ cookiecutter.project_name }}.ros
-
-  Build a binary:
-
-  ros build roswell/{{ cookiecutter.project_name}}.ros
-  ./roswell/{{ cookiecutter.project_name}} [name]~&
-
-  Your users can install the script with ros install {{ cookiecutter.username }}/{{ cookiecutter.project_name }}"))
+  {{ cookiecutter.project_name }} [name]
+"))
 
 ;; XXX: this load does not load from everywhere
 ;; It doesn't work when run as a script.

@@ -97,6 +97,7 @@ You can use command line options: https://cookiecutter.readthedocs.io/en/1.7.2/a
 
 - [ ] more CI setup
 - [ ] build a .deb (and .rpm)
+- [ ] better guess author
 - [X] [web project skeleton](https://github.com/vindarel/cl-cookieweb)
 
 ---
