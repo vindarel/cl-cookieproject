@@ -4,7 +4,7 @@
   :description "{{ cookiecutter.description }}"
   :author "{{ cookiecutter.author }} <{{ cookiecutter.email }}>"
   :version "{{ cookiecutter.version }}"
-  :license "BSD"
+  :license "{{ cookiecutter.licence }}"
   :serial t
 
   ;; dependencies
