@@ -1,5 +1,4 @@
-cl-cookieproject
-================
+# cl-cookieproject
 
 A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Lisp projects featuring:
 
@@ -13,8 +12,7 @@ A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Li
 - BSD licenced by default
 
 
-Usage
------
+## Usage
 
 Create a new project. You'll be prompted to provide some basic
 information about your new project, which will then be auto-generated
@@ -83,11 +81,23 @@ $ ./cookie-lisp-project
 Hello from cookie-lisp-project!
 ```
 
-# TODOs
+### Cookiecutter options
+
+You can use command line options: https://cookiecutter.readthedocs.io/en/1.7.2/advanced/cli_options.html
+
+- `--no-input`: do not prompt for parameters and only use cookiecutter.json file content
+- ` --replay`: do not prompt for parameters and only use information entered previously
+- ` -f, --overwrite-if-exists`: overwrite the contents of the output directory if it already exists
+- ` -s, --skip-if-file-exists`: skip the files in the corresponding directories if they already exist
+- ` -o, --output-dir`: where to output the generated project dir into
+- ` --config-file`: user configuration file
+
+
+## TODOs
 
 - [ ] more CI setup
 - [ ] build a .deb (and .rpm)
-- [ ] web project skeleton
+- [X] [web project skeleton](https://github.com/vindarel/cl-cookieweb)
 
 ---
 
