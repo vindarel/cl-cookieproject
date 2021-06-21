@@ -7,6 +7,4 @@
     "author": "CL User",
     "email": "{{ cookiecutter.author.split()|join('.')|lower }}@mail.com",
     "username": "{{ cookiecutter.author|first|lower }}{{ cookiecutter.author.split()|last|lower }}",
-    "branch": "master",
-    "remote": "origin"
 }
