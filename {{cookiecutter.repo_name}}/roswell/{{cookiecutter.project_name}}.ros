@@ -19,4 +19,9 @@ exec ros -Q -- $0 "$@"
 
 (defun main (&rest argv)
   "Optional name parameter."
+  (when (member "-h" argv :test #'equal)
+    ;; To parse command line arguments, use a third-party library such as
+    ;; unix-opts, defmain, adopt…
+    (help)
+    (uiop:quit))
   ({{ cookiecutter.project_name}}::greet (first argv)))
