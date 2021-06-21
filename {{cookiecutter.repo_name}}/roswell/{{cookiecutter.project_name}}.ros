@@ -4,7 +4,8 @@
 exec ros -Q -- $0 "$@"
 |#
 
-;; use +Q if you don't have Quicklisp dependencies to save startup time.
+;; Use +Q if you don't have Quicklisp dependencies to save startup time.
+;; Use ros build --disable-compression to save on startup time and loose on application size.
 
 (defun help ()
   (format t "~&Usage:
@@ -21,8 +22,8 @@ exec ros -Q -- $0 "$@"
 
   Your users can install the script with ros install {{ cookiecutter.username }}/{{ cookiecutter.project_name }}"))
 
-;XXX: this load does not load from everywhere
-; doesn't work for to run as a script.
+;; XXX: this load does not load from everywhere
+;; It doesn't work when run as a script.
 (load (truename "{{ cookiecutter.project_name}}.asd"))
 (ql:quickload "{{ cookiecutter.project_name }}")
 
