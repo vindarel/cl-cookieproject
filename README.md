@@ -117,8 +117,31 @@ You can use command line options: https://cookiecutter.readthedocs.io/en/1.7.2/a
 
 - [ ] more CI setup
 - [ ] build a .deb (and .rpm)
-- [ ] better guess author
+- [ ] better guess the author
+- [ ] include a documentation system
 - [X] [web project skeleton](https://github.com/vindarel/cl-cookieweb)
+
+
+## See also
+
+- https://github.com/fukamachi/cl-project
+  - one-package per file style (called "modern" but I find it too cumbersome to use)
+  - uses the Rove test system
+  - less integration (no recipe to build binaries, use CLI args or use Roswell). Pure CL, doesn't need Cookiecutter (Python).
+- https://github.com/triclops200/quickapp and [quickapp-cli](https://github.com/triclops200/quickapp-cli)
+  - last commit 2016 / 2015
+    - its `internal-quit` in app-utils.lisp should be `uiop:quit`
+  - uses buildapp: kind of old and not needed now with `asdf:make` or Roswell? (proove me wrong)
+  - includes an args parsing utility (it should probably use a more complete library though)
+- https://www.xach.com/lisp/quickproject/
+  - doesn't include a test definition
+  - simple, nothing fancy.
+- https://github.com/40ants/cl-project-with-docs
+  - uses Sphinx and reStructured text to render nice and readable HTML documentation.
+  - automatic gh-pages
+  - includes tests, CI (Travis), Roswell
+  - needs Sphinx (Python) and cl-launch.
+  - 2018: I suspect the author has now another favourite documentation generator (MGLPAX, 40ants/doc) and might not update much this skeleton.
 
 ---
 
