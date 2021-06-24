@@ -9,7 +9,11 @@ A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Li
 - Test suite using [Fiveam](https://common-lisp.net/project/fiveam/docs/)
   - a [travis](https://travis-ci.org/) CI configuration file (untested)
 - [Roswell](https://github.com/roswell/roswell/) recipe to build, install and share a binary
+- example use of command line arguments
+  (`uiop:command-line-arguments`). Proper parsing is left to do with a
+  third-party library (unix-opts, defmain, adopt…).
 
+We are also shaping out a template for a web project, see [cl-cookieweb](https://github.com/vindarel/cl-cookieweb).
 
 ## Usage
 
@@ -27,11 +31,8 @@ version [0.0.1]:
 year [1984]:
 author [CL User]: me
 email [me@mail.com]:
-username [mme]:
-branch [master]:
-remote [origin]:
+username [me]:
 Initialised empty Git repository in /home/vince/bacasable/lisp-projects/cookie-lisp-project/.git/
-Switched to a new branch 'master'
 ```
 
 Run it straight away:
@@ -76,9 +77,29 @@ writing 2154496 bytes from the immobile space at 0x50200000
 writing 13910016 bytes from the immobile space at 0x52000000
 done]
 
-$ ./cookie-lisp-project
-Hello from cookie-lisp-project!
+$ ./cookie-lisp-project me
+Hello me from cookie-lisp-project!
+
+$ ./cookie-lisp-project -h
+Usage:
+
+  cookie-lisp-project [name]
 ```
+
+Build it with Roswell:
+
+```
+$ ros build roswell/cookie-lisp-project.ros
+```
+
+A binary is created in the `roswell` directory.
+
+Your users can install the application with:
+
+```
+$ ros install github_username/project_name
+```
+
 
 ### Cookiecutter options
 
