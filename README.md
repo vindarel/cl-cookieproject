@@ -126,7 +126,7 @@ You can use command line options: https://cookiecutter.readthedocs.io/en/1.7.2/a
 
 - https://github.com/fukamachi/cl-project
   - one-package per file style (called "modern" but I find it too cumbersome to use)
-  - uses the Rove test system
+  - uses the Rove test system (and I think it is not ready, see [this discussion](https://github.com/LispCookbook/cl-cookbook/issues/297) and its own issues)
   - less integration (no recipe to build binaries, use CLI args or use Roswell). Pure CL, doesn't need Cookiecutter (Python).
 - https://github.com/triclops200/quickapp and [quickapp-cli](https://github.com/triclops200/quickapp-cli)
   - last commit 2016 / 2015
