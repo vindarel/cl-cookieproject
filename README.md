@@ -15,6 +15,8 @@ A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Li
 
 We are also shaping out a template for a web project, see [cl-cookieweb](https://github.com/vindarel/cl-cookieweb).
 
+NEW! 🎥 See our demo video: https://www.youtube.com/watch?v=XFc513MJjos
+
 ## Usage
 
 Create a new project. You'll be prompted to provide some basic
