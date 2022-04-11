@@ -14,7 +14,7 @@
   "Parse CLI args."
   (when (member "-h" argv :test #'equal)
     ;; To properly parse command line arguments, use a third-party library such as
-    ;; unix-opts, defmain, adopt… when needed.
+    ;; clingon, unix-opts, defmain, adopt… when needed.
     (help)
     (uiop:quit))
   (greet  (or (first argv)

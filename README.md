@@ -11,7 +11,7 @@ A [cookiecutter](https://github.com/audreyr/cookiecutter) template for Common Li
 - [Roswell](https://github.com/roswell/roswell/) recipe to build, install and share a binary
 - example use of command line arguments
   (`uiop:command-line-arguments`). Proper parsing is left to do with a
-  third-party library (unix-opts, defmain, adopt…).
+  third-party library ([clingon](https://github.com/dnaeon/clingon), unix-opts, defmain, adopt…).
 
 We are also shaping out a template for a web project, see [cl-cookieweb](https://github.com/vindarel/cl-cookieweb).
 
