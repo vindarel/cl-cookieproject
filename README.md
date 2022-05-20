@@ -114,14 +114,19 @@ You can use command line options: https://cookiecutter.readthedocs.io/en/1.7.2/a
 - ` -o, --output-dir`: where to output the generated project dir into
 - ` --config-file`: user configuration file
 
+The first time you run `cookiecutter` with a link to a GitHub repository, the skeleton is saved under `~/.cookiecutters/`. You can run the command for the second time with only the skeleton name:
+
+    cookiecutter cl-cookieproject
+
 
 ## TODOs
 
-- [ ] more CI setup
-- [ ] build a .deb (and .rpm)
+- [ ] initialize a git repository
 - [ ] better guess the author
 - [ ] include a documentation system
 - [X] [web project skeleton](https://github.com/vindarel/cl-cookieweb)
+- [ ] more CI setup
+- [ ] build a .deb (and .rpm)
 
 
 ## See also
