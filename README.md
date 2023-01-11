@@ -131,6 +131,11 @@ The first time you run `cookiecutter` with a link to a GitHub repository, the sk
 
 ## See also
 
+- https://github.com/dnaeon/cl-skeleton
+  - the newest of skeletons (late 2022), by an author with great contributed libraries.
+  - an ASDF system, a test system, scripts for running the tests, Dockerfiles for ECL, CCL and SBCL implementations and Github Actions for building Docker images and running the test suite of the project.
+  - just a shell script to fill-in the template files.
+  - from what I see, the generated project is very simple, the .asd is barebones (no default op to build a binary with asdf:make for example). The value lies in the files around: the 3 little Dockerfiles (they use clfoundation's images, like I do for Gitlab CI), the script to run tests (they use `rove`, the script returns the correct error code).
 - https://github.com/fukamachi/cl-project
   - one-package per file style (called "modern" but I find it too cumbersome to use)
   - uses the Rove test system (and I think it is not ready, see [this discussion](https://github.com/LispCookbook/cl-cookbook/issues/297) and its own issues)
