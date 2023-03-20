@@ -154,6 +154,11 @@ The first time you run `cookiecutter` with a link to a GitHub repository, the sk
   - includes tests, CI (Travis), Roswell
   - needs Sphinx (Python) and cl-launch.
   - 2018: I suspect the author has now another favourite documentation generator (MGLPAX, 40ants/doc) and might not update much this skeleton.
+- https://github.com/40ants/project-templates : templates to create a CL library or a web app with Reblocks.
+  - uses Quicklisp, Ultralisp, Qlot, CLPM, has Rove tests, has a GitHub CI, has docs (based on 40ants-doc). Based on the [mystic](https://github.com/roswell/mystic) templating system.
+  - [Youtube demo](https://www.youtube.com/watch?v=lwcmOZ0DQf0)
+  - created in 2023
+  - as of writing, doesn't have a utility to quickly run the web app project from the terminal, but from the editor, so all in all maybe a bit hard to use for total beginners. Otherwise, it's a configuration totally worth checking out.
 
 ---
 
