@@ -41,6 +41,7 @@ Run it straight away:
 
 ```bash
 $ cd cookie-lisp-project
+$ sudo apt install rlwrap  # a utility to bring readline keybindings and history to SBCL on the terminal.
 $ make run
 rlwrap sbcl --load run.lisp
 This is SBCL 2.0.10, an implementation of ANSI Common Lisp.
