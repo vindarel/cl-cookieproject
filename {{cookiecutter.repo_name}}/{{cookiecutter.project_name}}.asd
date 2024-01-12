@@ -10,7 +10,7 @@
   :source-control (:git "")
 
   ;; Dependencies.
-  :depends-on ()
+  :depends-on (:clingon)
 
   ;; Project stucture.
   :serial t
