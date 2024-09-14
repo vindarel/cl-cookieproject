@@ -132,6 +132,11 @@ The first time you run `cookiecutter` with a link to a GitHub repository, the sk
 
 ## See also
 
+- https://github.com/kjinho/cl-cookieproject/ (new)
+  - a fork that uses Qlot for dependency management and ASDF package-inferred-system.
+
+and:
+
 - https://github.com/dnaeon/cl-skeleton
   - the newest of skeletons (late 2022), by an author with great contributed libraries.
   - an ASDF system, a test system, scripts for running the tests, Dockerfiles for ECL, CCL and SBCL implementations and Github Actions for building Docker images and running the test suite of the project.
